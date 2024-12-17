@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge: Practo | Video Consultation with Doctor",
+  "Type": "Screen",
+  "Id": "xzZkdEtFyUGYTit6pqvj3g",
+  "Reference": "vKr75qf3UUGe65e1HKAyFg/xzZkdEtFyUGYTit6pqvj3g",
+  "ParentRef": "vKr75qf3UUGe65e1HKAyFg/T9XnxENg0kypvSB8EsTm0w",
+  "Created": "2024-12-13T13:17:33.4762214Z",
+  "Updated": "2024-12-13T13:17:33.4762214Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

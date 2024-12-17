@@ -1,0 +1,127 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="demopracto" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="demopracto_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="demopracto" sap:VirtualizedContainerService.HintSize="903.3333333333333,447.37333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence-practo2" sap:VirtualizedContainerService.HintSize="484,584.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge: Practo | Video Consultation with Doctor" sap:VirtualizedContainerService.HintSize="450,524.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="3ffeab38-e8ad-4c20-8066-ebdfb4c6bd4b" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,282.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login / Signup'" sap:VirtualizedContainerService.HintSize="382,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/" CVScreenId="2dc3111f-3dc4-4608-bd85-48489f1e674a" ContentHash="yoIKoL3xU0-2DiJthfBvPQ" DesignTimeRectangle="1676, 211, 151, 46" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl name='Practo login' tag='A' /&gt;" Guid="07208f97-3bb4-46a1-a4cd-d55522d9f7c9" ImageBase64="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" InformativeScreenshot="8edd68dc5ca462caedb0229ba96fc1f4.png" Reference="vKr75qf3UUGe65e1HKAyFg/gQRaCGAin06s3KwW92KEHQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="QsS8C8WnYUWFscnwVt3EKw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJeSURBVFhHYzA2LhbVNixerW1Q/FXLoOg/PTDILpCdILsZtA2L1mJTRA8McgQDPX2OjkF2M2CToCcedcCoA4a2Azx8W/+n58wC09jkicFEO+Dfv39wXF2/4v+jx2/+I4MXLz/8z8iZjVUvPky0A4gFPf2bserHhVEcoGlW8V85bvZ/xYwl/9XdUIMVG/jy9cf/L1++Q3kQ8OvXn/9+wV0oekFmgcwEmQ2yA1kO7gB1x6b/4qvu/xfZ9wGC97z7r5i9HK4QGfz48et/UdkiuFxe0fz/X7/9gMr+/793/2W4HMgMkFkwc0F2gOyCycMdIDXpJMJyGN79Dq4YGUyZvgNuAAz3TdwClf0PdgxIDKQXZAa6uSC7YPrgDhDd+gJDIQgrJc0DyyOD+OSpcANgOCJ2AlQWAsxtqsB6sZkJsgumD+4A8RV3sSpWDZ0MlkcGhaUL4QbAcHbBXKgsBOiblIL1YjMTZBdMH9wBoESCrlBi4bX/WkYlYHlkcOnyw//6pqVwQ/RMSv6fOXcXKvv//527UB8C9UosvI5hLsgumF64A0BYMX3xf8lF1/+Lr3nwX7Z9/38N6xq4HDoAWTJh8rb//ZO2/L91+xlUFAI6ujfA9YHMAJkFMhNkNsgOmBwIozgAHyYWXLn66L+OUTFWM7Bhshxw+cojKAsVnDl797+zByKLEYPJcgAoF4CK3VVrj4MtXQ2kK2qWgtp4WPXiw2Q7AJsacvCoA4h2wNwF++DY3Yf8+h8dE+0AWuFRBwyKrtlqdAl6YXDn1MysUljLoHglEH/Gpog2GGwXsHteLAoAX0Rc4HaDlOMAAAAASUVORK5CYII=" InformativeScreenshot="32eaa93b5d71546dddbe3c76c90dba90.jpg" Reference="vKr75qf3UUGe65e1HKAyFg/anLfkTqSCkyxPYA4nWXHzg" Selector="&lt;html app='msedge.exe' title='Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests' /&gt;" Title="Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests" Url="https://www.practo.com/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

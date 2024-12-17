@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Login / Signup",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "gQRaCGAin06s3KwW92KEHQ",
+  "Reference": "vKr75qf3UUGe65e1HKAyFg/gQRaCGAin06s3KwW92KEHQ",
+  "ParentRef": "vKr75qf3UUGe65e1HKAyFg/anLfkTqSCkyxPYA4nWXHzg",
+  "Created": "2024-12-03T12:20:20.0080741Z",
+  "Updated": "2024-12-03T12:20:20.0080741Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

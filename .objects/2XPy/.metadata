@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Practo login",
+  "Type": "App",
+  "Id": "2XPyMeC-Y0KjycVwHyR7ZQ",
+  "Reference": "vKr75qf3UUGe65e1HKAyFg/2XPyMeC-Y0KjycVwHyR7ZQ",
+  "Created": "2024-12-03T12:19:23.0024325Z",
+  "Updated": "2024-12-03T12:20:42.8086373Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

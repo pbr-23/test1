@@ -1,0 +1,696 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uas="clr-namespace:UiPath.Activities.System;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="885.9999999999999,8250" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence to book appointment on practo" sap:VirtualizedContainerService.HintSize="554.6666666666666,8227.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge: Practo | Video Consultation with Doctor" sap:VirtualizedContainerService.HintSize="520.6666666666666,7977.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="e59b9337-07ae-488a-82aa-396480583b0a" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486.6666666666667,7726" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ui:PasswordCredentials" Name="Practologn" />
+                <Variable x:TypeArguments="x:String" Name="testdata" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login / Signup'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/" CVScreenId="2dc3111f-3dc4-4608-bd85-48489f1e674a" ContentHash="GiRb_O-5LUu2NzWf1HJAqg" DesignTimeRectangle="1676, 211, 151, 46" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl name='Practo login' tag='A' /&gt;" Guid="07208f97-3bb4-46a1-a4cd-d55522d9f7c9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJsAAAAyCAYAAABLcqmqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAbzSURBVHhe7Z3/SyJbGIfv/ywhhIQEtuRlh5AwqLYbEpLBCim4S1IoLrRtMT+su0m43OJW1CLRYou1SPu57ztzxmZ01KbGqY33gQM7xzPO+fLMOe8ZXfsLghAQIpsQGCKbEBiusjUaDXz79g1fvnxBtVqVJOleiX1hb9gfNxyy/fr1yyh8fHyMnz9/4vfv3+oVQRgO+8LesD/sEftkxyHbICsFwQvW6minIxu/yEYKgl+wT/bJqyMbW8hToCD4Bftkn906snFwJzGa4CfsE3tl0ZGNdxOC4Dd2r0Q2YaSIbEJgiGxCYIhsQmCIbEJgiGxCYIhsQmCIbEJgiGxCYIxQNh3LoUmEQil8VjmBcFNFJkrXDSdR+q7yfOUa++k4Qm+20VY5Ttq42MsiEZuitnP7JxGOaki83cWFdcLI6/g8eXmyNbcxF6brjml4d6ry/OTHFrTQFDI1deyARFwlEand0UQWJX0Xur6F3EICYe6Lf3ZNQUddx2fKy5ONaV+hdaP+7TMneQ2hWB4n6tjBaR4xanNktbf/2o0a6hfqgBlhHZ8rL1O2UXFLy19kElrZ/UulF5sJY1Zb9qP7XiDPQrZ2YxfZWQ0RXlr4nPE4tNUKTlqqgMXtJerlFLQJVa47pXQqdIbiNB/br2vWRdtsGNfKzEyZyxql6EIBR93X6UN7b4mWviXofWak9id6nd4zQsvl4Ld0qyPRrKGUSt71Q1cyJfbQlmrKyI9vnKmMOz6n+JwEilbM+L2AOJVd+WqOR+d9x6YQ89BHg3hy2doHWcTGqFw0iWyZY5xd7OTnEeW8CTq300gVmHPnrW4Z5fQyBeIcaFNeODaPlT3u1P6yhWIaYuMJLG9UjPNLb2lgOX+6gHNVsj8NlGbcl8gOFM8luN5cn+kUinodTdddhEsdadOwwjdROIGM6geun9EPPOCzaeiGGB7a8gDZYjN0zUlrLCooplS8+Zre91aVfSBPK9ttDRnu4EgKevedc2TGP51dX5MGko57BpvKRSk/UblUGQNkI3n1pspS7K/yrpEC/gOV0Q8jHtOQGxLQt2pZxLtmpuhsFjv/WfVjeuvYrCTNenRtPI7W+QZL4kOn3h7a8gDZQq/zPbNYfc28yR8bHjytbAdrxt0YXT9UGXbMmSQUWsIOL1tKtp6yZwVDyrsOHSCbscx2oZsDMqwjjYGc2ULX+LrTvsSRXsAKhQZhNdNx0jat/9fRT7Y4ckcqQ3H+njYkdim8tOUBsrmVtW7oyJrrFvzePKlsZgdPYvHTtcpx4uyQBj7M0vFYArmDM9rJXaNFO7ziHN919sHwKJsakIGy3WxjkaRZ3HOv50BIvHo+qeIfK95zqaO1BNPMUm9coX1zhYuDAuZ45ncs8x7a4pds1qzndk0P/EGyES1admOcZ0sU42S/Dl6iHitbs0z1jKxh/8ExyzV2FrhOVlvc6kjNo5neCB1sKTydxb5jOhXZXBgum6dl1Nog/J1F/fQQ541LNJs0Axhl7fgt2yFyJHgs71bH+9MZXOOpiUsd1QYhvl7DyekxLprUvpbb7sJDW76mjeNHy6be132c7s/TyuZlg0CcV+bNHVd3CmtI5KvqcYPPstX4hkii9EMdD+B8cwmL5cPeG6C1i+UIXb8T87nU8fYYH4yQgPOdKTw5j1ztShX00JbGBjQuO1dxPoppH+Kdcf1e2aJva131v1Kz8vDN0TACkI1ESKex0pPyxvLQprvP2N4Pe/TRqiLzimaYNd286410jLq+hYzRcVZM5ads19Df0Hl9Pwe1cVNHTtWD5ei0ZSNl7k4p1ix2Jo3eOrZI6hjdNJnqmWobpdMa9HJanW/Fe17aouJcyoulzcdFRn3G44i94p1rr2wh6nf7R21W30ZXq8P7YAgByNYv3TX0Pg9162vUORQ31dWxA8cS4KNsAz8HdeH2Eicf81icid/tQrktqS3UHXFXdx1phqeZr99u73yDP5mw+stjW1p1FBfudsXhv1Mo1S/R4gfUbsvo+xr2+WZXYxGeSCKzd/Zo0ZgRyuYv+2lqPN3dO93LLdEyntzHkf1XZfjE0ToNEi19wx/4PhaK11iGhW2XTx7UMjaRRddTEX8ZFLP5xB8jGz9P03hAbE/N7d+oiKb1IR8RPW/M2cuceYofzSVYL9MsyTPgWBwrVStmGxEimxNebnMLSUTHaQCoYzhFZmhwKM7xY5p/Wvh7cF1LcHiKluACPjcCaJ3IJrwkRDYhMEQ2ITBENiEwRDYhMEQ2ITBENiEwXGWTnzkV/Kbvz5zKDzgLftP3B5zlp+kFv+n70/QMW2h/URAeCntkn9UYh2zy54SEx8C+sDfsD3s08M8JWVhWcnDHuwlJku6T2JdBq6OrbILgP8D/AyvYWcdcN6QAAAAASUVORK5CYII=" InformativeScreenshot="8edd68dc5ca462caedb0229ba96fc1f4.png" Reference="vKr75qf3UUGe65e1HKAyFg/gQRaCGAin06s3KwW92KEHQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="10" Credential="[Practologn]" CredentialName="UiPath: PractoOnline" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password" sap:VirtualizedContainerService.HintSize="452.6666666666667,211.33333333333334" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_1" />
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452.6666666666667,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Text="[Practologn.Username]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://accounts.practo.com/login?next=%2Fcheckid_request&amp;intent=fabric" CVScreenId="88bea028-7c16-48f3-a127-6b97f53fa2b0" DesignTimeRectangle="1068, 576, 523, 52" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" Guid="eb5fa188-9b02-49c9-94e7-4229b1cff971" InformativeScreenshot="0df8e550f6a3735f27f9e91b8cca2022.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Accounts' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452.6666666666667,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Text="[Practologn.Password]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://accounts.practo.com/login?next=%2Fcheckid_request&amp;intent=fabric" CVScreenId="32fd609b-4452-49fc-acff-ae713fd8c432" DesignTimeRectangle="1068, 700, 523, 53" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="fb3d5545-ab8e-459f-b1b0-b566f30867ee" InformativeScreenshot="3c243178e88ef011c5e679db89bb89d2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Accounts' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="32fd609b-4452-49fc-acff-ae713fd8c432" CvTextArea="1067, 663, 90, 19" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="1068, 628, 523, 72" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='passwordContainer' tag='DIV' type='' class='padding-bottom-8 padding-top-20' aaname='Password' check:innerText='Password' /&gt;" Guid="fc769499-b42c-4f85-8096-efed18f11817" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="test--uncheck 'Remember me for 30 days'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://accounts.practo.com/login?next=%2Fcheckid_request&amp;intent=fabric" CVScreenId="c1d7868b-17b4-4c9d-bcea-46eabf45c7fd" CvElementArea="1065, 789, 29, 28" CvType="CheckBox" DesignTimeRectangle="1068, 796, 20, 20" DesignTimeScaleFactor="1.5" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl id='remember' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="7c9d3b86-1188-45f0-aaef-8fabf6668945" InformativeScreenshot="b043edd7aff93e14c47b0299eb16127e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="c1d7868b-17b4-4c9d-bcea-46eabf45c7fd" CvTextArea="1112, 794, 207, 19" CvTextArgument="Remember me for 30 days" CvType="Text" DesignTimeRectangle="1113, 787, 205, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Remember me for 30 days' tag='LABEL' type='' class='mousePointer textMuted line-height-20' check:innerText='Remember me for 30 days' /&gt;" Guid="6da6654b-f800-40a1-8312-29ee7678275c" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://accounts.practo.com/login?next=%2Fcheckid_request&amp;intent=fabric" CVScreenId="b3c8efda-ed50-4daf-a712-1665ff05f8dd" DesignTimeRectangle="1068, 907, 523, 68" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='login' tag='BUTTON' /&gt;" Guid="c1c43206-ff3b-4e60-bee7-9fc4a03befa8" InformativeScreenshot="2d7cd773a69f2f784a1f5e967041addf.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Accounts' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Find Doctors'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/" CVScreenId="4a12839b-c648-4717-84cc-713b64eb2181" CvTextArea="327, 227, 135, 22" CvTextArgument="Find Doctors" CvType="Text" DesignTimeRectangle="329, 224, 133, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='product-tab__title' parentid='root' tag='DIV' type='' aaname='Find Doctors' check:innerText='Find Doctors' /&gt;" Guid="6b6348a6-8f8f-4ff9-b688-b3581aea86b5" InformativeScreenshot="ccdad7e1beb92ba82505a04a769a07fb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="4a12839b-c648-4717-84cc-713b64eb2181" CvTextArea="83, 222, 166, 43" CvTextArgument=".practo*" CvType="Text" DesignTimeRectangle="86, 226, 162, 37" FuzzySelectorArgument="&lt;webctrl class='practo_logo_new' type='' tag='I' aaname='' /&gt;" Guid="5a1f48cd-3e1d-4677-856f-f7e3c4e7baa9" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452.6666666666667,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Text="dentists" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/doctors" CVScreenId="08155599-e3ef-4806-a559-ef6c8c3c174e" CvTextArea="884, 618, 339, 21" CvTextArgument="Search doctors, clinics, hospitals, etc." CvType="Text" DesignTimeRectangle="842, 592, 706, 75" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' /&gt;" Guid="eae4ed99-d11b-4bc8-abaa-1f37cb9fe74f" InformativeScreenshot="304b8b50404093a5d1b3617b35b11c13.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo | Book Doctor Appointments Online, Order Medicine, Diagnostic Tests, Consult' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NGetText DisplayName="Get Text 'Instant Video'" sap:VirtualizedContainerService.HintSize="452.6666666666667,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" ScrapingMethod="Fulltext" TextString="[testdata]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/" DesignTimeRectangle="835, 798, 250, 84" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='root' tag='DIV' type='' class='row-1 u-font--bold u-font--20 u-t-c--grey_7' /&gt;" Guid="4deff023-13c8-4e6b-9abd-ac6153b13715" InformativeScreenshot="f48f3a835046db40459fcc17d3c808e1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="21e3fed8-ff7c-4ecf-882c-b07870f33944" CvTextArea="504, 803, 181, 28" CvTextArgument="Instant Video" CvType="Text" DesignTimeRectangle="504, 802, 181, 29" ElementType="Text" Guid="a89d7880-cdf8-4dfd-b38d-b6a1507a757b" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dentist'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/doctors" CVScreenId="0fa36c10-f82e-4a9a-b15f-4bf8a8bfd309" CvTextArea="930, 630, 70, 21" CvTextArgument="Dentist" CvType="Text" DesignTimeRectangle="931, 625, 509, 31" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='c-omni-suggestion-item__content__title' parentid='c-omni-container' tag='DIV' /&gt;" Guid="8c43edf9-f9f7-4581-9f7c-1ad93363673a" InformativeScreenshot="18be2aadfae9cfc9b589e2c3592dcf00.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo | Book Doctor Appointments Online, Order Medicine, Diagnostic Tests, Consult' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="0fa36c10-f82e-4a9a-b15f-4bf8a8bfd309" DesignTimeRectangle="870, 625, 29, 31" FullSelectorArgument="&lt;webctrl class='icon-ic_search' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;i' parentid='c-omni-container' tag='I' /&gt;" Guid="866aea41-ae08-46b4-b132-c9824eeb18f6" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="452.6666666666667,124" sap2010:WorkflowViewState.IdRef="Delay_3" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'All Filters'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/search/doctors?results_type=doctor&amp;q=%5B%7B%22word%22%3A%22dentist%22%2C%22autocompleted%22%3Atrue%2C%22category%22%3A%22subspeciality%22%7D%5D&amp;city=Bangalore" CVScreenId="37f903ec-785e-4b4c-b0cb-0b86403ef35b" CvElementArea="959, 467, 31, 28" CvType="ArrowButton" DesignTimeRectangle="961, 465, 29, 29" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='container' tag='I' class='u-transition--transform u-d-inlineblock icon-ic_dropdown' aaname='' /&gt;" Guid="f9619d61-3329-47ab-a85a-c744f68056c7" InformativeScreenshot="6a364e79ae68b88b843a94ab2d6174db.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Best Dentists Near Me In Bangalore - Instant Appointment Booking, View Fees, Feedbacks | Practo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="37f903ec-785e-4b4c-b0cb-0b86403ef35b" CvTextArea="863, 470, 92, 21" CvTextArgument="All Filters" CvType="Text" DesignTimeRectangle="867, 467, 88, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='All Filters' parentid='container' tag='SPAN' type='' class='' check:innerText='All Filters' /&gt;" Guid="00007493-71a6-4762-bab0-8d73ae47b145" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Available Tomorrow'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/search/doctors?results_type=doctor&amp;q=%5B%7B%22word%22%3A%22dentist%22%2C%22autocompleted%22%3Atrue%2C%22category%22%3A%22subspeciality%22%7D%5D&amp;city=Bangalore" CVScreenId="32b4d032-78be-4e48-9a8a-94b448f3c2db" CvElementArea="807, 657, 30, 29" CvType="RadioButton" DesignTimeRectangle="812, 660, 21, 21" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl type='' class='c-filter__select--radio u-d-inlineblock u-valign--middle u-pos-rel' isleaf='1' parentid='container' tag='DIV' aaname='' /&gt;" Guid="3fea0706-5578-4261-81b1-bf934c65de33" InformativeScreenshot="e31258d3454f87a62cdeacfe4f9d643b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Best Dentists Near Me In Bangalore - Instant Appointment Booking, View Fees, Feedbacks | Practo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="32b4d032-78be-4e48-9a8a-94b448f3c2db" CvTextArea="842, 660, 189, 21" CvTextArgument="Available Tomorrow" CvType="Text" DesignTimeRectangle="845, 658, 184, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Available Tomorrow' parentid='container' tag='SPAN' type='' class='' check:innerText='Available Tomorrow' /&gt;" Guid="25d54f3a-ff6d-498e-878d-61a811457407" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="452.6666666666667,124" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="452.6666666666667,272.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V4">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.practo.com/search/doctors?results_type=doctor&amp;q=%5B%7B%22word%22%3A%22dentist%22%2C%22autocompleted%22%3Atrue%2C%22category%22%3A%22subspeciality%22%7D%5D&amp;city=Bangalore&amp;filters%5Bavailability%5D=is_available_tomorrow" CVScreenId="6b0a2bef-76a9-46ee-8ed0-8dc8e9273603" DesignTimeRectangle="914, -300, 318, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Book Clinic VisitNo Booking Fee' idx='*' tag='BUTTON' /&gt;" Guid="f43a3bf3-ec74-4b32-8ff2-7905b4e33e9b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Best Dentists Near Me In Bangalore - Instant Appointment Booking, View Fees, Feedbacks | Practo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Book Clinic VisitNo Boo…'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/search/doctors?results_type=doctor&amp;q=%5B%7B%22word%22%3A%22dentist%22%2C%22autocompleted%22%3Atrue%2C%22category%22%3A%22subspeciality%22%7D%5D&amp;city=Bangalore&amp;filters%5Bavailability%5D=is_available_tomorrow" CVScreenId="6b0a2bef-76a9-46ee-8ed0-8dc8e9273603" DesignTimeRectangle="914, -300, 318, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Book Clinic VisitNo Booking Fee' idx='*' tag='BUTTON' /&gt;" Guid="c8c54a41-7fb2-48db-a84e-15cf26728e68" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Best Dentists Near Me In Bangalore - Instant Appointment Booking, View Fees, Feedbacks | Practo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Tomorrow'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/search/doctors?results_type=doctor&amp;q=%5B%7B%22word%22%3A%22Dentist%22%2C%22autocompleted%22%3Atrue%2C%22category%22%3A%22subspeciality%22%7D%5D&amp;city=Bangalore&amp;filters%5Bavailability%5D=is_available_tomorrow" CVScreenId="cfac1a00-d12f-4a4f-b451-d0d16d57ab1b" CvTextArea="623, 818, 114, 21" CvTextArgument="Tomorrow" CvType="Text" DesignTimeRectangle="624, 818, 112, 21" DesignTimeScaleFactor="1.5" ElementType="Text" Guid="ac7d206b-4acf-4e3d-ab94-66482534cd51" InformativeScreenshot="21be6d44c7ccfc1c6fa6898e678de223.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Best Dentists Near Me In Bangalore - Instant Appointment Booking, View Fees, Feedbacks | Practo' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="cfac1a00-d12f-4a4f-b451-d0d16d57ab1b" CvTextArea="371, 816, 67, 27" CvTextArgument="Today" CvType="Text" DesignTimeRectangle="372, 816, 67, 27" ElementType="Text" Guid="74a9df26-b0d1-43ab-9d11-da3f45a7d051" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '09:30 AM'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/search/doctors?results_type=doctor&amp;q=%5B%7B%22word%22%3A%22dentist%22%2C%22autocompleted%22%3Atrue%2C%22category%22%3A%22subspeciality%22%7D%5D&amp;city=Bangalore&amp;filters%5Bavailability%5D=is_available_tomorrow" CVScreenId="b5875ffa-07d3-4d30-a450-4ded1fa4a815" CvElementArea="283, 648, 131, 52" CvTextArea="302, 665, 93, 19" CvTextArgument="* AM" CvType="Button" DesignTimeRectangle="286, 650, 126, 47" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='09:30 AM' parentid='container' tag='SPAN' type='' class='' check:innerText='09:30 AM' /&gt;" Guid="1041eff3-907a-4289-8f9f-0599e144c478" InformativeScreenshot="fee472a089ea8cd7eadffbb52d78d6dc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Best Dentists Near Me In Bangalore - Instant Appointment Booking, View Fees, Feedbacks | Practo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b5875ffa-07d3-4d30-a450-4ded1fa4a815" DesignTimeRectangle="172, 665, 78, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='morning' parentid='container' tag='SPAN' /&gt;" Guid="b44579cf-3076-414d-94ce-9b72eae86a7d" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="452.6666666666667,124" sap2010:WorkflowViewState.IdRef="Delay_2" />
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="452.6666666666667,272.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="10" Version="V4">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.practo.com/appointment/venkatesh-m-j-dentist/851203/book?type=abs&amp;doctor_id=851203&amp;appointment_time=2024-12-04%2009%3A30%3A00&amp;appointment_token=ODUxMjAzUHJhY3RpY2VEb2N0b3I%3D&amp;prepaid=true&amp;amount=300&amp;discount=0&amp;discount_type=PERCENTAGE&amp;cancellation_fee=50&amp;prepaid_type=payment_optional&amp;cancellation_charge=50&amp;cancellation_fee_type=ABSOLUTE&amp;plus_discount=0&amp;total_amount_to_pay=300&amp;disclaimers%5B0%5D%5Btext%5D=Free%20cancellation%20and%20rescheduling%20is%20available%20till%202%20hours%20before%20the%20appointment%20time.&amp;disclaimers%5B0%5D%5Bposition%5D=1&amp;disclaimers%5B1%5D%5Btext%5D=After%20the%20stipulated%20time%2C%20rescheduling%20will%20not%20be%20available%2C%20and%20a%20fee%20of%2050%20INR%20will%20be%20applicable%20for%20cancellations%20or%20no-shows.&amp;disclaimers%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B0%5D%5Btext%5D=If%20you%20wish%20to%20cancel%20or%20reschedule%2C%20you%20can%20do%20it%20upto%202%20hours%20before%20the%20appointment%20time&amp;disclaimers_v2%5B0%5D%5Bbold_text%5D%5B0%5D=2%20hours%20before&amp;disclaimers_v2%5B0%5D%5Bposition%5D=1&amp;disclaimers_v2%5B0%5D%5Bicon%5D=clock&amp;disclaimers_v2%5B1%5D%5Btext%5D=You%20will%20be%20charged%20Rs%2050%20cancellation%20fee%20if%20you%20cancel%20within%202%20hours%20of%20your%20appointment%20time%20or%20absent&amp;disclaimers_v2%5B1%5D%5Bbold_text%5D%5B0%5D=Rs%2050%20cancellation%20fee&amp;disclaimers_v2%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B1%5D%5Bicon%5D=rupee&amp;disclaimers_v2%5B2%5D%5Btext%5D=However%2C%20in%20the%20event%20of%20doctor%20no%20show%2C%20you%20will%20not%20be%20charged%20a%20cancellation%20fee&amp;disclaimers_v2%5B2%5D%5Bposition%5D=3&amp;disclaimers_v2%5B2%5D%5Bicon%5D=smiley" CVScreenId="6ce5785a-8abb-489d-a992-d2f0bce4479b" CvTextArea="1022, 593, 163, 19" CvTextArgument="Pay later at the clinic" CvType="Text" DesignTimeRectangle="1023, 589, 162, 25" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Pay later at the clinic' parentid='container' tag='DIV' type='' class='' check:innerText='Pay later at the clinic' /&gt;" Guid="2f5af64c-2bfa-492f-84eb-d4efde98a8fc" InformativeScreenshot="47d58e96ac75287dfbcf1500d1fd5069.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Book an appointment | Practo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452.6666666666667,137.33333333333334" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm Clinic Visit'" sap:VirtualizedContainerService.HintSize="382,220" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.practo.com/appointment/venkatesh-m-j-dentist/851203/book?type=abs&amp;doctor_id=851203&amp;appointment_time=2024-12-04%2009%3A30%3A00&amp;appointment_token=ODUxMjAzUHJhY3RpY2VEb2N0b3I%3D&amp;prepaid=true&amp;amount=300&amp;discount=0&amp;discount_type=PERCENTAGE&amp;cancellation_fee=50&amp;prepaid_type=payment_optional&amp;cancellation_charge=50&amp;cancellation_fee_type=ABSOLUTE&amp;plus_discount=0&amp;total_amount_to_pay=300&amp;disclaimers%5B0%5D%5Btext%5D=Free%20cancellation%20and%20rescheduling%20is%20available%20till%202%20hours%20before%20the%20appointment%20time.&amp;disclaimers%5B0%5D%5Bposition%5D=1&amp;disclaimers%5B1%5D%5Btext%5D=After%20the%20stipulated%20time%2C%20rescheduling%20will%20not%20be%20available%2C%20and%20a%20fee%20of%2050%20INR%20will%20be%20applicable%20for%20cancellations%20or%20no-shows.&amp;disclaimers%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B0%5D%5Btext%5D=If%20you%20wish%20to%20cancel%20or%20reschedule%2C%20you%20can%20do%20it%20upto%202%20hours%20before%20the%20appointment%20time&amp;disclaimers_v2%5B0%5D%5Bbold_text%5D%5B0%5D=2%20hours%20before&amp;disclaimers_v2%5B0%5D%5Bposition%5D=1&amp;disclaimers_v2%5B0%5D%5Bicon%5D=clock&amp;disclaimers_v2%5B1%5D%5Btext%5D=You%20will%20be%20charged%20Rs%2050%20cancellation%20fee%20if%20you%20cancel%20within%202%20hours%20of%20your%20appointment%20time%20or%20absent&amp;disclaimers_v2%5B1%5D%5Bbold_text%5D%5B0%5D=Rs%2050%20cancellation%20fee&amp;disclaimers_v2%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B1%5D%5Bicon%5D=rupee&amp;disclaimers_v2%5B2%5D%5Btext%5D=However%2C%20in%20the%20event%20of%20doctor%20no%20show%2C%20you%20will%20not%20be%20charged%20a%20cancellation%20fee&amp;disclaimers_v2%5B2%5D%5Bposition%5D=3&amp;disclaimers_v2%5B2%5D%5Bicon%5D=smiley" CVScreenId="6ce5785a-8abb-489d-a992-d2f0bce4479b" CvElementArea="974, 658, 606, 47" CvTextArea="1184, 669, 186, 19" CvTextArgument="Confirm Clinic Visit" CvType="Button" DesignTimeRectangle="977, 659, 600, 45" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='c-btn--dark ' aaname='Confirm Clinic Visit' check:innerText='Confirm Clinic Visit' /&gt;" Guid="82b7e2dd-ef92-47b3-9ec6-a328e9262cf4" InformativeScreenshot="5380f962706a71ad93ba2d71145a8273.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Book an appointment | Practo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Label 'Your appointment ID is'" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.practo.com/appointment/venkatesh-m-j-dentist/851203/book?type=abs&amp;doctor_id=851203&amp;appointment_time=2024-12-04%2009%3A30%3A00&amp;appointment_token=ODUxMjAzUHJhY3RpY2VEb2N0b3I%3D&amp;prepaid=true&amp;amount=300&amp;discount=0&amp;discount_type=PERCENTAGE&amp;cancellation_fee=50&amp;prepaid_type=payment_optional&amp;cancellation_charge=50&amp;cancellation_fee_type=ABSOLUTE&amp;plus_discount=0&amp;total_amount_to_pay=300&amp;disclaimers%5B0%5D%5Btext%5D=Free%20cancellation%20and%20rescheduling%20is%20available%20till%202%20hours%20before%20the%20appointment%20time.&amp;disclaimers%5B0%5D%5Bposition%5D=1&amp;disclaimers%5B1%5D%5Btext%5D=After%20the%20stipulated%20time%2C%20rescheduling%20will%20not%20be%20available%2C%20and%20a%20fee%20of%2050%20INR%20will%20be%20applicable%20for%20cancellations%20or%20no-shows.&amp;disclaimers%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B0%5D%5Btext%5D=If%20you%20wish%20to%20cancel%20or%20reschedule%2C%20you%20can%20do%20it%20upto%202%20hours%20before%20the%20appointment%20time&amp;disclaimers_v2%5B0%5D%5Bbold_text%5D%5B0%5D=2%20hours%20before&amp;disclaimers_v2%5B0%5D%5Bposition%5D=1&amp;disclaimers_v2%5B0%5D%5Bicon%5D=clock&amp;disclaimers_v2%5B1%5D%5Btext%5D=You%20will%20be%20charged%20Rs%2050%20cancellation%20fee%20if%20you%20cancel%20within%202%20hours%20of%20your%20appointment%20time%20or%20absent&amp;disclaimers_v2%5B1%5D%5Bbold_text%5D%5B0%5D=Rs%2050%20cancellation%20fee&amp;disclaimers_v2%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B1%5D%5Bicon%5D=rupee&amp;disclaimers_v2%5B2%5D%5Btext%5D=However%2C%20in%20the%20event%20of%20doctor%20no%20show%2C%20you%20will%20not%20be%20charged%20a%20cancellation%20fee&amp;disclaimers_v2%5B2%5D%5Bposition%5D=3&amp;disclaimers_v2%5B2%5D%5Bicon%5D=smiley" CVScreenId="cd9e0c52-b152-4c09-9716-ef54d602ad67" CvTextArea="974, 197, 212, 20" CvTextArgument="Your appointment ID is" CvType="Text" DesignTimeRectangle="977, 194, 214, 25" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Your appointment ID is ' tag='SPAN' type='' class='' check:innerText='Your appointment ID is' /&gt;" Guid="33b584c6-3d2e-4d54-a0a0-33b08b37a9a6" InformativeScreenshot="c434f3dbb06dd3bc3997d3fef568150e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Book an appointment | Practo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="452.6666666666667,272.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" Version="V4">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.practo.com/appointment/venkatesh-m-j-dentist/851203/book?type=abs&amp;doctor_id=851203&amp;appointment_time=2024-12-06%2009%3A30%3A00&amp;appointment_token=ODUxMjAzUHJhY3RpY2VEb2N0b3I%3D&amp;prepaid=true&amp;amount=300&amp;discount=0&amp;discount_type=PERCENTAGE&amp;cancellation_fee=50&amp;prepaid_type=payment_optional&amp;cancellation_charge=50&amp;cancellation_fee_type=ABSOLUTE&amp;plus_discount=0&amp;total_amount_to_pay=300&amp;disclaimers%5B0%5D%5Btext%5D=Free%20cancellation%20and%20rescheduling%20is%20available%20till%202%20hours%20before%20the%20appointment%20time.&amp;disclaimers%5B0%5D%5Bposition%5D=1&amp;disclaimers%5B1%5D%5Btext%5D=After%20the%20stipulated%20time%2C%20rescheduling%20will%20not%20be%20available%2C%20and%20a%20fee%20of%2050%20INR%20will%20be%20applicable%20for%20cancellations%20or%20no-shows.&amp;disclaimers%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B0%5D%5Btext%5D=If%20you%20wish%20to%20cancel%20or%20reschedule%2C%20you%20can%20do%20it%20upto%202%20hours%20before%20the%20appointment%20time&amp;disclaimers_v2%5B0%5D%5Bbold_text%5D%5B0%5D=2%20hours%20before&amp;disclaimers_v2%5B0%5D%5Bposition%5D=1&amp;disclaimers_v2%5B0%5D%5Bicon%5D=clock&amp;disclaimers_v2%5B1%5D%5Btext%5D=You%20will%20be%20charged%20Rs%2050%20cancellation%20fee%20if%20you%20cancel%20within%202%20hours%20of%20your%20appointment%20time%20or%20absent&amp;disclaimers_v2%5B1%5D%5Bbold_text%5D%5B0%5D=Rs%2050%20cancellation%20fee&amp;disclaimers_v2%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B1%5D%5Bicon%5D=rupee&amp;disclaimers_v2%5B2%5D%5Btext%5D=However%2C%20in%20the%20event%20of%20doctor%20no%20show%2C%20you%20will%20not%20be%20charged%20a%20cancellation%20fee&amp;disclaimers_v2%5B2%5D%5Bposition%5D=3&amp;disclaimers_v2%5B2%5D%5Bicon%5D=smiley" CVScreenId="7ef249fc-79dd-442d-b380-d190e79dd03c" DesignTimeRectangle="1766, 154, 62, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='user_info_top' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span' tag='SPAN' /&gt;" Guid="124a0e9e-03ef-4fcc-b4dd-0afbc3b12d73" InformativeScreenshot="55a3120fb39a3bc6daf792620f5b25fc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Book an appointment | Practo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'pavanipavani+9163809713…'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.practo.com/appointment/venkatesh-m-j-dentist/851203/book?type=abs&amp;doctor_id=851203&amp;appointment_time=2024-12-06%2009%3A30%3A00&amp;appointment_token=ODUxMjAzUHJhY3RpY2VEb2N0b3I%3D&amp;prepaid=true&amp;amount=300&amp;discount=0&amp;discount_type=PERCENTAGE&amp;cancellation_fee=50&amp;prepaid_type=payment_optional&amp;cancellation_charge=50&amp;cancellation_fee_type=ABSOLUTE&amp;plus_discount=0&amp;total_amount_to_pay=300&amp;disclaimers%5B0%5D%5Btext%5D=Free%20cancellation%20and%20rescheduling%20is%20available%20till%202%20hours%20before%20the%20appointment%20time.&amp;disclaimers%5B0%5D%5Bposition%5D=1&amp;disclaimers%5B1%5D%5Btext%5D=After%20the%20stipulated%20time%2C%20rescheduling%20will%20not%20be%20available%2C%20and%20a%20fee%20of%2050%20INR%20will%20be%20applicable%20for%20cancellations%20or%20no-shows.&amp;disclaimers%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B0%5D%5Btext%5D=If%20you%20wish%20to%20cancel%20or%20reschedule%2C%20you%20can%20do%20it%20upto%202%20hours%20before%20the%20appointment%20time&amp;disclaimers_v2%5B0%5D%5Bbold_text%5D%5B0%5D=2%20hours%20before&amp;disclaimers_v2%5B0%5D%5Bposition%5D=1&amp;disclaimers_v2%5B0%5D%5Bicon%5D=clock&amp;disclaimers_v2%5B1%5D%5Btext%5D=You%20will%20be%20charged%20Rs%2050%20cancellation%20fee%20if%20you%20cancel%20within%202%20hours%20of%20your%20appointment%20time%20or%20absent&amp;disclaimers_v2%5B1%5D%5Bbold_text%5D%5B0%5D=Rs%2050%20cancellation%20fee&amp;disclaimers_v2%5B1%5D%5Bposition%5D=2&amp;disclaimers_v2%5B1%5D%5Bicon%5D=rupee&amp;disclaimers_v2%5B2%5D%5Btext%5D=However%2C%20in%20the%20event%20of%20doctor%20no%20show%2C%20you%20will%20not%20be%20charged%20a%20cancellation%20fee&amp;disclaimers_v2%5B2%5D%5Bposition%5D=3&amp;disclaimers_v2%5B2%5D%5Bicon%5D=smiley" CVScreenId="9609d01d-6479-4b7f-8716-180553e51b80" DesignTimeRectangle="1766, 154, 62, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='user_info_top' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span' tag='SPAN' /&gt;" Guid="bc99201a-233e-4420-906a-5fdae78bd2b8" InformativeScreenshot="caa5f562d425ac94cd3d6c93409abd33.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Book an appointment | Practo' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'pavanipavani+9163809713…'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://drive.practo.com/records" CVScreenId="a5f0f9d8-ee6a-43b8-9f80-205a3879f7d6" CvTextArea="1523, 651, 183, 24" CvTextArgument="My Medical Records" CvType="Text" DesignTimeRectangle="1524, 648, 182, 25" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='My Medical Records' type='' tag='SPAN' class='' check:innerText='My Medical Records' /&gt;" Guid="edd7ea03-a190-45db-9646-143a8874b5b9" InformativeScreenshot="0510c7905f28c0ce1966bd1b85892dcb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Drive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="452.6666666666667,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6838d8f3-9cf6-4005-90cf-8c5c7d603d4f" InformativeScreenshot="7d5fa3154a9cac514fb427fb60fb6dea" Selector="&lt;webctrl aaname='Upload records' parentid='sideBarAppContainer' tag='DIV' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ADD A FILE'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://drive.practo.com/records" CVScreenId="195cde87-af55-4f46-b151-06b96f27b827" DesignTimeRectangle="684, 240, 90, 90" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl aaname='ADD A FILE' tag='DIV' /&gt;" Guid="9c29d3fc-01a9-43f4-9af6-97f4dcae43ec" InformativeScreenshot="f3dff8e0a724b4d9ab5c9a3b6cec9cc0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Drive' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'DirectUIHWND'" sap:VirtualizedContainerService.HintSize="452.6666666666667,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="Dummymedrec1">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce6269d9-6f23-4cad-a363-724f4a7563b5" InformativeScreenshot="5c65b96d662929a66deba746f6295ac5" Selector="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;&lt;wnd aaname=' Search Downloads' cls='DirectUIHWND' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dummymedrec1.png'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://drive.practo.com/records" CVScreenId="c415b9b3-ed0c-4bd3-af89-994653192f24" CvTextArea="307, 267, 169, 22" CvTextArgument="Dummymedrec1.png" CvType="Text" DesignTimeRectangle="307, 267, 169, 22" DesignTimeScaleFactor="1.5" ElementType="Text" Guid="488466d2-2766-4ac0-b552-33234e37471a" InformativeScreenshot="058db28bea6c5c188f4dc56e10260580.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="452.6666666666667,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c07c19f8-7678-420d-88fc-92bff426fe82" InformativeScreenshot="b441203592e0fbb8176ff54721486be4" Selector="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452.6666666666667,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Text="Medrec1" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://drive.practo.com/records" CVScreenId="824afce3-46ed-48eb-9aff-1f5361ab2bd0" DesignTimeRectangle="684, 486, 552, 44" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="53a08b2d-194c-4b41-a226-d2b554bb29d9" InformativeScreenshot="c49819237a3a2de2bfa991203d2aeba5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Drive' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="452.6666666666667,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a81c40af-8b2f-48b8-a48d-f213bb5fb3f4" InformativeScreenshot="4e0a6057fc3fb2187a6daa6f32eb6564" Selector="&lt;webctrl class='datepicker' tag='INPUT' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://drive.practo.com/records" CVScreenId="b28a148d-879d-4756-9b94-aabc29c163cd" DesignTimeRectangle="1175, 731, 41, 41" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='option' tag='DIV' class='react-datepicker__day react-datepicker__day--keyboard-selected react-datepicker__day--today' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentclass='react-datepicker__week' /&gt;" Guid="de2c097a-57aa-4ab6-ab1b-053c946a22a7" InformativeScreenshot="995c5a3cd8e050c0e8a66c08f5626c1c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Drive' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="452.6666666666667,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="826e1720-52bd-4c83-8996-02b74cf32607" InformativeScreenshot="09a52ad2a456f572c0cbf3ddaf1d7758" Selector="&lt;webctrl aaname='Report' tag='DIV' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="452.6666666666667,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://drive.practo.com/records" CVScreenId="1771c1e1-34df-4ae0-8b4e-9ec4693bb8fa" DesignTimeRectangle="1122, 842, 114, 50" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Done' tag='DIV' /&gt;" Guid="36007014-f91b-42ae-814c-fd6b7e85d4e4" InformativeScreenshot="601c505e3961ef44c519078a8075c685.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Drive' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="Label 'Done'" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://drive.practo.com/records" CVScreenId="873e3f03-af6b-42bb-b271-8d058ead4bbc" DesignTimeRectangle="903, 692, 113, 50" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Done' tag='DIV' type='' class='button text-center heading-four btn-positive' check:innerText='Done' /&gt;" Guid="9d9533d4-626a-4ac1-bd1c-fde6ae2935bf" InformativeScreenshot="c234cd6664156e3988a5fdf3ca5915b6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Drive' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:VerifyExecutionOptions.Target>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="452.6666666666667,124" sap2010:WorkflowViewState.IdRef="Delay_4" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Done'" sap:VirtualizedContainerService.HintSize="452.6666666666667,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://drive.practo.com/records" CVScreenId="3ffe04fa-5f4b-4032-907e-a39f243a8552" DesignTimeRectangle="903, 692, 113, 50" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Done' tag='DIV' /&gt;" Guid="d1325398-3deb-4e1b-b3af-66aaa1bc521f" InformativeScreenshot="c234cd6664156e3988a5fdf3ca5915b6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo Drive' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="QsS8C8WnYUWFscnwVt3EKw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJeSURBVFhHYzA2LhbVNixerW1Q/FXLoOg/PTDILpCdILsZtA2L1mJTRA8McgQDPX2OjkF2M2CToCcedcCoA4a2Azx8W/+n58wC09jkicFEO+Dfv39wXF2/4v+jx2/+I4MXLz/8z8iZjVUvPky0A4gFPf2bserHhVEcoGlW8V85bvZ/xYwl/9XdUIMVG/jy9cf/L1++Q3kQ8OvXn/9+wV0oekFmgcwEmQ2yA1kO7gB1x6b/4qvu/xfZ9wGC97z7r5i9HK4QGfz48et/UdkiuFxe0fz/X7/9gMr+/793/2W4HMgMkFkwc0F2gOyCycMdIDXpJMJyGN79Dq4YGUyZvgNuAAz3TdwClf0PdgxIDKQXZAa6uSC7YPrgDhDd+gJDIQgrJc0DyyOD+OSpcANgOCJ2AlQWAsxtqsB6sZkJsgumD+4A8RV3sSpWDZ0MlkcGhaUL4QbAcHbBXKgsBOiblIL1YjMTZBdMH9wBoESCrlBi4bX/WkYlYHlkcOnyw//6pqVwQ/RMSv6fOXcXKvv//527UB8C9UosvI5hLsgumF64A0BYMX3xf8lF1/+Lr3nwX7Z9/38N6xq4HDoAWTJh8rb//ZO2/L91+xlUFAI6ujfA9YHMAJkFMhNkNsgOmBwIozgAHyYWXLn66L+OUTFWM7Bhshxw+cojKAsVnDl797+zByKLEYPJcgAoF4CK3VVrj4MtXQ2kK2qWgtp4WPXiw2Q7AJsacvCoA4h2wNwF++DY3Yf8+h8dE+0AWuFRBwyKrtlqdAl6YXDn1MysUljLoHglEH/Gpog2GGwXsHteLAoAX0Rc4HaDlOMAAAAASUVORK5CYII=" InformativeScreenshot="32eaa93b5d71546dddbe3c76c90dba90.jpg" Reference="vKr75qf3UUGe65e1HKAyFg/anLfkTqSCkyxPYA4nWXHzg" Selector="&lt;html app='msedge.exe' title='Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests' /&gt;" Title="Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests" Url="https://www.practo.com/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520.6666666666666,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;appointment booked and medrecord added&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>
