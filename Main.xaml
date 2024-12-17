@@ -244,7 +244,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452.6666666666667,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Text="dentists" Version="V4">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452.6666666666667,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="e59b9337-07ae-488a-82aa-396480583b0a" Text="dentistss" Version="V4">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.practo.com/doctors" CVScreenId="08155599-e3ef-4806-a559-ef6c8c3c174e" CvTextArea="884, 618, 339, 21" CvTextArgument="Search doctors, clinics, hospitals, etc." CvType="Text" DesignTimeRectangle="842, 592, 706, 75" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' /&gt;" Guid="eae4ed99-d11b-4bc8-abaa-1f37cb9fe74f" InformativeScreenshot="304b8b50404093a5d1b3617b35b11c13.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Practo | Book Doctor Appointments Online, Order Medicine, Diagnostic Tests, Consult' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                 </uix:NTypeInto.Target>
